@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+html::-webkit-scrollbar {
+  width: 1px;
+}
 .app {
   width: 100%;
   background-color: white;

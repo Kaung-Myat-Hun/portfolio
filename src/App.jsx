@@ -1,11 +1,15 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import View from "./components/View/View";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <div className="">
-        <p className="text-lg font-bold text-red-600">Hello</p>
-      </div>
+    <div className="App bg-slate-200">
+      <Navbar></Navbar>
+      <BrowserRouter>
+        <View></View>
+      </BrowserRouter>
     </div>
   );
 }
