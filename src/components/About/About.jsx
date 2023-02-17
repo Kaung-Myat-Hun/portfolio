@@ -194,6 +194,16 @@ function About() {
                 <td>50%</td>
                 <td>Next Js</td>
               </tr>
+              <tr>
+                <td>
+                  <progress
+                    className={`progress transition-colors hover:cursor-pointer hover:progress-accent ${style.progressBar}`}
+                    value="40"
+                    max="100"></progress>
+                </td>
+                <td>40%</td>
+                <td>TypeScript</td>
+              </tr>
             </table>
             <p
               onClick={() => navigate("/")}
