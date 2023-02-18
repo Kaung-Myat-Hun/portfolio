@@ -8,7 +8,6 @@ import Project from "../Projects/Project";
 import AllProject from "../Projects/AllProjects/AllProjects";
 
 function View() {
-  const location = useLocation();
   return (
     <Routes>
       <Route index exact path="/" element={<Home />} />
