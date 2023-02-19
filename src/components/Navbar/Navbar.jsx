@@ -20,19 +20,19 @@ function Navbar() {
         </p>
         <ul className={` flex list-none justify-around items-center `}>
           <li>
-            <NavLink className={`p-5 ${style.navLink} text-slate-500`} to="/">
+            <a className={`p-5 ${style.navLink} text-slate-500`} href="/">
               Home
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink className={`p-5 ${style.navLink} text-slate-500`} to="/projects">
+            <a className={`p-5 ${style.navLink} text-slate-500`} href="/projects">
               Projects
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink className={`p-5 ${style.navLink} text-slate-500`} to="/contact">
+            <a className={`p-5 ${style.navLink} text-slate-500`} href="/contact">
               Contact
-            </NavLink>
+            </a>
           </li>
         </ul>
       </div>

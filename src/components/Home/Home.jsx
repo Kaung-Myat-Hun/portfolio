@@ -41,7 +41,6 @@ function Home() {
             </p>
           </div>
           <div className={`text-black`}>
-            <span>go to</span>
             <a
               className={`flex items-center justify-center`}
               target="blank"
