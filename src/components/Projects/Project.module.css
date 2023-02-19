@@ -1,0 +1,22 @@
+.mainContainer {
+  height: 68vh;
+  align-items: center;
+  display: flex;
+}
+.table {
+  width: 60%;
+  margin: 20px 0 20px 90px;
+}
+.table tr td {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #000;
+}
+.projectImage {
+  margin: 100px 50px;
+  width: 600px;
+  height: 300px;
+}
+.chatMain {
+  height: 88vh;
+}

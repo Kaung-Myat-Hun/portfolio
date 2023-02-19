@@ -49,7 +49,7 @@
   position: relative;
   top: 10rem;
   left: 15rem;
-  height: 90vh;
+  height: 80vh;
   max-width: 50rem;
 }
 .moreAboutBtn {
@@ -71,7 +71,7 @@
   user-select: none;
 }
 .mainContainer {
-  height: 92vh;
+  height: 87.8vh;
   overflow: hidden;
 }
 
