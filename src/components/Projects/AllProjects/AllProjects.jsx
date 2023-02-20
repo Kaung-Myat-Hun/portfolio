@@ -1,6 +1,6 @@
-import React,{useEffect,useState} from "react";
-import Loading from '../../CustomLoading/CustomLoading'
-import axios from 'axios'
+import React, { useEffect, useState } from "react";
+import Loading from "../../CustomLoading/CustomLoading";
+import axios from "axios";
 
 function AllProjects() {
   const [loading, setLoading] = useState(false);
@@ -20,11 +20,7 @@ function AllProjects() {
       });
   }, []);
   const navigate = useNavigate();
-  return (
-    <>
-      {loading ? (
-        <Loading />
-      ) : ( <div>AllProjects</div>)}</>;
+  return <>{loading ? <Loading /> : <div>AllProjects</div>}</>;
 }
 
 export default AllProjects;
