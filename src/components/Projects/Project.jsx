@@ -75,7 +75,7 @@ function Project() {
               all projects
             </p>
             <p
-              onClick={() => navigate("/projects")}
+              onClick={() => navigate("/contact")}
               className={`text-black py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
               contact page{" "}
               <svg width="20" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

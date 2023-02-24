@@ -13,6 +13,10 @@
 .navLink {
   font-size: 1.6rem;
 }
+.active {
+  color: #007;
+  text-decoration: underline;
+}
 
 /* .portfolioLogo:hover .p1 {
   color: #007bff;
