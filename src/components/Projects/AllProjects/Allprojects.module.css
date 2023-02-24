@@ -1,0 +1,33 @@
+.table {
+  width: 60%;
+  margin: 20px 0 20px 90px;
+}
+.table tr td {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #000;
+}
+.projectImage {
+  margin: 30px;
+  width: 400px;
+  height: 200px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.mainContainer {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projectImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px #7f7f7f90;
+}
+.table a {
+  color: #007bff;
+}
+.table a:hover {
+  color: #007;
+}

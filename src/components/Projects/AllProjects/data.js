@@ -1,0 +1,97 @@
+export const Data = [
+  {
+    id: 1,
+    title: "Open Ai Chat",
+    project_type: "open source",
+    img: "/project photo/openai/Screenshot_20230224_071946.png",
+    imgs: ["/project photo/openai/Screenshot_20230224_071946.png"],
+    description:
+      'This is open source project on my github./n This project`s api is get from "Open AI". Thanks',
+    link: "https://openai-bw.netlify.app/",
+    source_code: "https://github.com/KaungMyatHun-15691/OpenAI",
+  },
+  {
+    id: 2,
+    title: "Number Wizzard Game",
+    project_type: "open source / Web Game",
+    img: "/project photo/numberWizzardgame/Screenshot_20230224_072309.png",
+    imgs: ["/project photo/numberWizzardgame/Screenshot_20230224_072309.png"],
+    description: "This is open source project on my github./n You can  play with computer. Thanks",
+    link: "https://kaungmyathun-15691.github.io/Number-Wizard-Game/",
+    source_code: "https://github.com/KaungMyatHun-15691/Number-Wizard-Game",
+  },
+  {
+    id: 3,
+    title: "Check OS Type",
+    project_type: "open source",
+    img: "/project photo/checkostype/Screenshot_20230224_072138.png",
+    imgs: ["/project photo/checkostype/Screenshot_20230224_072138.png"],
+    description: "This is open source project on my github./n Reference to the Medium Kim T",
+    link: "https://check-os-type.netlify.app/",
+    source_code: "https://github.com/KaungMyatHun-15691/CheckOsType",
+  },
+  {
+    id: 4,
+    title: "Accesses Chat Messenger",
+    project_type: "Real world sample",
+    img: "/project photo/accesses.png",
+    imgs: [
+      "/project photo/accesses.png",
+      "/project photo/chat/Screenshot 2023-02-23 222351.png",
+      "/project photo/chat/Screenshot 2023-02-23 222550.png",
+      "/project photo/chat/Screenshot 2023-02-23 222615.png",
+      "/project photo/chat/Screenshot 2023-02-23 222741.png",
+    ],
+    description:
+      "This project is named as Accesses This app is one type of Social type application . But this project has one main feature. That eature is a main business key of Onbety because onbety's transaction record will notify to this accesses.",
+    link: "https://accesses-chat-messenger-frontend.netlify.app/",
+    source_code: "",
+  },
+  {
+    id: 5,
+    title: "Onbety",
+    project_type: "Real World",
+    img: "/project photo/onbety.png",
+    imgs: [
+      "/project photo/onbety.png",
+      "/project photo/onbety/Screenshot_20230224_071446.png",
+      "/project photo/onbety/Screenshot_20230224_071537.png",
+    ],
+    description:
+      "This project is named as Onbety. This app is one type of gambling website such as 1xBet this site contain with sport , esport and casino with betting. This site contain with live streaming feature.",
+    link: "https://onbety.com",
+    source_code: "",
+  },
+  {
+    id: 6,
+    title: "admin dashboard e-commerce",
+    project_type: "real world sample",
+    img: "/project photo/admindashboard.png",
+    imgs: [
+      "/project photo/admindashboard.png",
+      "/project photo/admin/Screenshot_20230224_071735.png",
+      "/project photo/admin/Screenshot_20230224_071814.png",
+    ],
+    description:
+      " This project is named as Admin Dashboard. This app is one type of admin panel and this is for e-commerce website. This project has many crud state.",
+    link: "https://admin-ecommerce.netlify.app/",
+    source_code: "",
+  },
+  {
+    id: 7,
+    title: "E-Commerce",
+    project_type: "real world sample",
+    img: "/project photo/e-commerce/main.png",
+    imgs: [
+      "/project photo/e-commerce/main.png",
+      "/project photo/e-commerce/Screenshot_20230225_122539.png",
+      "/project photo/e-commerce/Screenshot_20230225_122604.png",
+      "/project photo/e-commerce/Screenshot_20230225_122641.png",
+      "/project photo/e-commerce/Screenshot_20230225_122700.png",
+    ],
+    description:
+      "This is E-Commerce project that sales about cosmetic. This site has contain add to cart features and add to whitelist features",
+    link: "https://e-commerce-dynasity.netlify.app",
+    source_code: "",
+  },
+];
