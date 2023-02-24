@@ -3,6 +3,12 @@ import img from "../../assets/image/project photo/accesses.png";
 import styles from "./Project.module.css";
 import Loading from "../CustomLoading/CustomLoading";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
+import sample1 from "../../assets/image/project photo/chat/Screenshot 2023-02-23 222351.png";
+import sample2 from "../../assets/image/project photo/chat/Screenshot 2023-02-23 222550.png";
+import sample3 from "../../assets/image/project photo/chat/Screenshot 2023-02-23 222615.png";
+import sample4 from "../../assets/image/project photo/chat/Screenshot 2023-02-23 222741.png";
 
 function ChatMessenger() {
   const [loading, setLoading] = useState(false);
@@ -22,6 +28,7 @@ function ChatMessenger() {
       });
   }, []);
   const navigate = useNavigate();
+  const arr = [img, sample1, sample2, sample3, sample4];
   return (
     <>
       {loading ? (
@@ -59,6 +66,15 @@ function ChatMessenger() {
                     <p>Emoji</p>
                     <p>Authentication</p>
                     <p>Channels</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Demo</td>
+                  <td>
+                    <a href="https://accesses-chat-messenger-frontend.netlify.app/" target="blank">
+                      Chat Messenger (!note that is real world sample so you cann't login into this
+                      Site)
+                    </a>
                   </td>
                 </tr>
               </table>

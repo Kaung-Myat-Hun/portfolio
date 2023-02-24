@@ -3,6 +3,7 @@ import img from "../../assets/image/project photo/onbety.png";
 import styles from "./Project.module.css";
 import Loading from "../CustomLoading/CustomLoading";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Onbety() {
   const [loading, setLoading] = useState(false);
@@ -58,6 +59,14 @@ function Onbety() {
                     <p>Transaction with Crypto and Local Banking</p>
                     <p>Can Bet on Esport</p>
                     <p>Slot games +</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Demo</td>
+                  <td>
+                    <a href="https://www.onbety.com" target="blank">
+                      Onbety Site
+                    </a>
                   </td>
                 </tr>
               </table>

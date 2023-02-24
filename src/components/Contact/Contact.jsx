@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Contact.module.css";
 import axios from "axios";
 import Loading from "../CustomLoading/CustomLoading";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
   const [loading, setLoading] = useState(false);

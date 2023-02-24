@@ -3,6 +3,7 @@ import img from "../../assets/image/project photo/admindashboard.png";
 import styles from "./Project.module.css";
 import Loading from "../CustomLoading/CustomLoading";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function AdminDashboard() {
   const [loading, setLoading] = useState(false);
@@ -60,6 +61,14 @@ function AdminDashboard() {
                     <p>Merchant CRUD</p>
                     <p>Shipping CRUD</p>
                     <p>Payment CRUD</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Demo</td>
+                  <td>
+                    <a href="https://admin-ecommerce.netlify.app/home" target="blank">
+                      Admin E-Commerce
+                    </a>
                   </td>
                 </tr>
               </table>

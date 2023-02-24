@@ -55,6 +55,12 @@ function About() {
                     <td> 1 years Experience With React JS </td>
                   </tr>
                   <tr>
+                    <td>Education</td>
+                    <td>
+                      <p>Zoology Final Year</p>
+                    </td>
+                  </tr>
+                  <tr>
                     <td>Phone : </td>
                     <td>
                       <a className={`hover:text-blue-600`} href="viber://chat?number=+959752815691">
@@ -82,8 +88,8 @@ function About() {
                         Hello! I am <span className={`font-bold`}>Kaung Myat Hun</span>.
                       </p>
                       <p>
-                        I am Junior Frontend Web Developer with 1 Year Experience Working with React
-                        JS .
+                        I am Junior Frontend Web Developer with 6 Months Experience Working with
+                        React JS .
                       </p>
                       <p>
                         I am interesting to challenge to get new experience with Frontend developer.
