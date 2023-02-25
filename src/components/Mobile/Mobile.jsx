@@ -3,7 +3,7 @@ import React from "react";
 function Mobile(props) {
   // console.log(props);
   return (
-    <div className={`bg-white text-center text-black`}>
+    <div className={`bg-white text-center h-full text-black`}>
       <h1 className={`text-4xl`}>
         You are using <span className={`text-blue-700`}>{props.name.name}</span> device.
       </h1>
