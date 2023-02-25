@@ -20,3 +20,8 @@
 .chatMain {
   height: 88vh;
 }
+@media screen and (max-width: 400px) {
+  .chatMain {
+    height: auto !important;
+  }
+}

@@ -74,6 +74,10 @@
   height: 87.8vh;
   overflow: hidden;
 }
+.iconGithub {
+  width: 30px;
+  height: 30px;
+}
 
 @keyframes spin {
   0% {
@@ -81,5 +85,52 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 400px) {
+  .profileImage {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+  .mainSquare {
+    width: 250px;
+    height: 250px;
+    left: 40px;
+  }
+  .profileImageContainer {
+    width: 80vw;
+    top: 30px;
+    left: 30px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .mainContainer {
+    width: 100vw;
+    height: auto;
+    overflow: auto;
+    margin: 0 !important;
+  }
+  .name {
+    font-size: 60px;
+  }
+  .heroText {
+    font-size: 60px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .infoText {
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .moreAboutBtn {
+    margin-left: 100px;
+  }
+  .iconGithub {
+    width: 30px;
+    height: 30px;
   }
 }

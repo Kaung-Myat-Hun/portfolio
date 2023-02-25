@@ -1,3 +1,13 @@
 .main {
   height: 88vh;
 }
+@media screen and (max-width: 400px) {
+  .main {
+    height: auto;
+  }
+  .frame {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+}

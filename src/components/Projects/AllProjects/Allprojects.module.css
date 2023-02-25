@@ -31,3 +31,16 @@
 .table a:hover {
   color: #007;
 }
+@media screen and (max-width: 400px) {
+  .chatMain {
+    height: auto !important;
+  }
+  .box {
+    width: 350px !important;
+    line-height: 10px;
+  }
+  .box .table {
+    width: 100%;
+    margin: 0;
+  }
+}

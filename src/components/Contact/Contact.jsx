@@ -27,8 +27,8 @@ function Contact() {
       {loading ? (
         <Loading />
       ) : (
-        <div className={`${styles.main} flex justify-around`}>
-          <div className={`w-6/12`}>
+        <div className={`${styles.main} flex max-[400px]:flex-col justify-around`}>
+          <div className={`w-6/12 max-[400px]:w-full`}>
             <form action="" className={`flex flex-col justify-center items-center mt-32 w-11/12`}>
               <input
                 placeholder=" Name"
@@ -52,12 +52,15 @@ function Contact() {
                 cols="10"
                 rows="10"
                 placeholder="Discuss Our Project"></textarea>
-              <button className={`btn w-5/12 bg-slate-600 mt-10`}>Send</button>
+              <button className={`btn w-5/12 text-white border-none bg-slate-600 mt-10`}>
+                Send
+              </button>
             </form>
           </div>
-          <div className={`w-6/12 my-10`}>
+          <div className={`w-6/12 max-[400px]:mx-auto max-[400px]:w-full  my-10`}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1152.501713243559!2d96.18037019657116!3d16.799416790365235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1676821725103!5m2!1sen!2smm"
+              className={styles.frame}
               width="450"
               height="500"
               style={{ border: 0 }}

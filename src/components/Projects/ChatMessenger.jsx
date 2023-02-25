@@ -35,8 +35,12 @@ function ChatMessenger() {
         <Loading />
       ) : (
         <div className={styles.chatMain}>
-          <div className={`flex`}>
-            <img src={img} alt="" className={`${styles.projectImage}`} />
+          <div className={`flex max-[400px]:flex-col`}>
+            <img
+              src={img}
+              alt=""
+              className={`${styles.projectImage} max-[400px]:w-9/12 max-[400px]:h-80`}
+            />
             <div>
               <table className={styles.table}>
                 <tr>

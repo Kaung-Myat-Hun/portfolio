@@ -60,7 +60,7 @@ function AllProjects() {
                   <img
                     src={item.img}
                     alt=""
-                    className={`${styles.projectImage}`}
+                    className={`${styles.projectImage} max-[400px]:w-9/12 max-[400px]:h-80`}
                     onClick={() => {
                       setOpen(true);
                       setModalData(item);
@@ -91,7 +91,7 @@ function AllProjects() {
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description">
-            <Box sx={style}>
+            <Box sx={style} className={styles.box}>
               <div>
                 <Carousel>
                   {modalData?.imgs?.map((item) => (
@@ -128,7 +128,9 @@ function AllProjects() {
                       {modalData.source_code === "" ? (
                         ""
                       ) : (
-                        <a href={modalData.source_code}>Source Code</a>
+                        <a href={modalData.source_code} target="blank">
+                          Source Code
+                        </a>
                       )}
                     </td>
                   </tr>
