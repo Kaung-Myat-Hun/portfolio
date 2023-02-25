@@ -40,9 +40,9 @@ function Home() {
               Experience with REACT JS
             </p>
           </div>
-          <div className={`text-black`}>
+          <div className={`text-black ${style.iconContainer}`}>
             <a
-              className={`flex items-center max-[400px]:mb-20 hover:fill-blue-600 justify-center`}
+              className={` max-[400px]:mb-20 hover:fill-blue-600 justify-end`}
               target="blank"
               href="https://github.com/KaungMyatHun-15691">
               <svg

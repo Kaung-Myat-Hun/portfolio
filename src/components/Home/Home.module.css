@@ -78,6 +78,9 @@
   width: 30px;
   height: 30px;
 }
+.iconContainer {
+  margin-left: 35vw;
+}
 
 @keyframes spin {
   0% {
@@ -132,5 +135,8 @@
   .iconGithub {
     width: 30px;
     height: 30px;
+  }
+  .iconContainer {
+    margin-left: 0;
   }
 }
