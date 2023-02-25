@@ -7,7 +7,7 @@ import Mobile from "./components/Mobile/Mobile";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [os, setOs] = useState(null);
+  const [os, setOs] = useState({});
   useEffect(() => {
     var module = {
       options: [],
@@ -94,25 +94,17 @@ function App() {
     var e = module.init(),
       debug = "";
 
-    debug += "os.name = " + e.os.name + "<br/>";
-    debug += "os.version = " + e.os.version + "<br/>";
-    debug += "browser.name = " + e.browser.name + "<br/>";
-    debug += "browser.version = " + e.browser.version + "<br/>";
+    debug += e.os.name;
 
-    debug += "<br/>";
-    debug += "navigator.userAgent = " + navigator.userAgent + "<br/>";
-    debug += "navigator.appVersion = " + navigator.appVersion + "<br/>";
-    debug += "navigator.platform = " + navigator.platform + "<br/>";
-    debug += "navigator.vendor = " + navigator.vendor + "<br/>";
-
-    setOs(debug);
+    setOs({ name: debug });
   }, []);
+  console.log(os?.name, "os");
   return (
     <>
       {os?.name === "Android" ? (
-        <Mobile name={os?.name} />
+        <Mobile name={os} />
       ) : os?.name === "iPhone" ? (
-        <Mobile name={os?.name} />
+        <Mobile name={os} />
       ) : (
         <div className="App bg-slate-200">
           <Navbar></Navbar>
@@ -120,6 +112,7 @@ function App() {
             <View></View>
           </BrowserRouter>
           <Footer></Footer>
+          {/* <Mobile name={os} /> */}
         </div>
       )}
     </>
