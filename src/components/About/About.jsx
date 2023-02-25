@@ -80,7 +80,7 @@ function About() {
                     <td>&nbsp;</td>
                   </tr>
                   <tr>
-                    <td className={`underline`}>Description</td>
+                    <td className={`underline`}>About Myself</td>
                   </tr>
                   <tr>
                     <td colSpan="2">
