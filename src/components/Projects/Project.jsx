@@ -68,7 +68,7 @@ function Project() {
               </div>
             </div>
           </div>
-          <div className={`flex max-[400px]:flex-col justify-between`}>
+          <div className={`flex max-[400px]:flex-col max-[400px]:items-center justify-between`}>
             <p
               onClick={() => navigate("/projects/all-projects")}
               className={`text-black py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>

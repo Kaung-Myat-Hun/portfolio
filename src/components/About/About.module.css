@@ -101,3 +101,150 @@
     transform: rotate(360deg);
   }
 }
+.profileImage {
+  width: 33rem;
+  height: 38rem;
+  transform: rotateY(180deg);
+}
+.mainSquare {
+  position: absolute;
+  background-color: #313131;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 3px;
+  top: 5rem;
+  left: 0rem;
+  transform: rotate(45deg);
+  transition: all 3s;
+}
+.square {
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 3px;
+  background-color: #7f7f7f80;
+  transition: all 3s;
+}
+.mainSquare:hover {
+  transform: rotate(40deg);
+  background-color: #007bff;
+}
+.SOne {
+  transform: rotate(80deg);
+  top: -5rem;
+  left: 27rem;
+}
+.square:hover,
+.SOne:hover {
+  background-color: #007bff80;
+  transform: rotate(180deg);
+}
+.STwo {
+  transform: rotate(37deg);
+  top: -2rem;
+  right: 20rem;
+}
+.square:hover .STwo {
+  background-color: #007bff80;
+  transform: rotate(100deg);
+}
+.profileImageContainer {
+  position: relative;
+  top: 10rem;
+  left: 15rem;
+  height: 80vh;
+  max-width: 50rem;
+}
+.moreAboutBtn {
+  margin-top: 15vh;
+  margin-left: 7vw;
+}
+.infoText {
+  width: 50vw;
+}
+.name {
+  user-select: none;
+}
+.heroText {
+  font-size: 6rem;
+  user-select: none;
+}
+.subtitle {
+  font-size: 3rem;
+  user-select: none;
+}
+.mainContainer {
+  height: 87.8vh;
+  overflow: hidden;
+}
+.iconGithub {
+  width: 30px;
+  height: 30px;
+}
+.iconContainer {
+  margin-left: 35vw;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 400px) {
+  .profileImage {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+  .mainSquare {
+    width: 250px;
+    height: 250px;
+    left: 40px;
+  }
+  .profileImageContainer {
+    width: 80vw;
+    top: 30px;
+    left: 30px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .mainContainer {
+    width: 100vw;
+    height: auto;
+    overflow: auto;
+    margin: 0 !important;
+  }
+  .name {
+    font-size: 60px;
+  }
+  .heroText {
+    font-size: 60px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .infoText {
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .moreAboutBtn {
+    margin-left: 100px;
+  }
+  .iconGithub {
+    width: 30px;
+    height: 30px;
+  }
+  .iconContainer {
+    margin-left: 0;
+  }
+  .table {
+    width: 90vw;
+    margin: 10px;
+    margin-top: -150px !important;
+  }
+}

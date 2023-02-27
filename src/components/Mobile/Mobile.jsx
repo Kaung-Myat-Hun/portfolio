@@ -1,9 +1,11 @@
 import React from "react";
+import style from "./Mobild.module.css";
 
 function Mobile(props) {
   // console.log(props);
   return (
-    <div className={`bg-white text-center h-full text-black`}>
+    <div
+      className={`bg-white text-center ${style.mainContainer} display-flex justify-center items-center text-black`}>
       <h1 className={`text-4xl`}>
         You are using <span className={`text-blue-700`}>{props.name.name}</span> device.
       </h1>

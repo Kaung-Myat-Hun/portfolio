@@ -31,7 +31,7 @@ function About() {
         <>
           <div className={`${style.mainContainer} bg-white`}>
             <p className={`underline absolute text-xl text-black p-20`}>About</p>
-            <div className={`flex `}>
+            <div className={`flex max-[400px]:flex-col `}>
               <div>
                 <div className={style.profileImageContainer}>
                   <div className={style.mainSquare}></div>
@@ -234,7 +234,8 @@ function About() {
                     <td>TypeScript</td>
                   </tr>
                 </table>
-                <div className={`flex justify-between`}>
+                <div
+                  className={`flex justify-between max-[400px]:flex-col max-[400px]:items-center`}>
                   <p
                     onClick={() => navigate("/")}
                     className={`text-black py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
