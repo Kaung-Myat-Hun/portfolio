@@ -75,6 +75,11 @@ function Project() {
               All Projects
             </p>
             <p
+              onClick={() => navigate("/about-me")}
+              className={`text-black text-xl py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline`}>
+              about me
+            </p>
+            <p
               onClick={() => navigate("/contact")}
               className={`text-black py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
               Contact Page{" "}

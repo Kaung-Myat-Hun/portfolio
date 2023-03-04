@@ -53,6 +53,15 @@ function ChatMessenger() {
                   <td>Chat Messenger</td>
                 </tr>
                 <tr>
+                  <td>Contributors :</td>
+                  <td>
+                    <span className={styles.textLink} onClick={() => navigate("/about-me")}>
+                      Kaung Myat Hun
+                    </span>
+                    <span>,Thazin Phyo Kyaw</span>
+                  </td>
+                </tr>
+                <tr>
                   <td>Project Category:</td>
                   <td>Social</td>
                 </tr>

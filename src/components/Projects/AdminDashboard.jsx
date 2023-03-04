@@ -47,6 +47,14 @@ function AdminDashboard() {
                   <td>Admin Dashboard</td>
                 </tr>
                 <tr>
+                  <td>Contributors :</td>
+                  <td>
+                    <p className={styles.textLink} onClick={() => navigate("/about-me")}>
+                      Kaung Myat Hun
+                    </p>
+                  </td>
+                </tr>
+                <tr>
                   <td>Project Category:</td>
                   <td>Admin Panel</td>
                 </tr>

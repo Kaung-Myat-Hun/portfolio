@@ -4,7 +4,7 @@
   display: flex;
 }
 .table {
-  width: 60%;
+  width: 80%;
   margin: 20px 0 20px 90px;
 }
 .table tr td {
@@ -19,6 +19,10 @@
 }
 .chatMain {
   height: 88vh;
+}
+.textLink:hover {
+  color: #007bff;
+  cursor: pointer;
 }
 @media screen and (max-width: 400px) {
   .chatMain {

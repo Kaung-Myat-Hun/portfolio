@@ -47,6 +47,15 @@ function Onbety() {
                   <td>Onbety</td>
                 </tr>
                 <tr>
+                  <td>Contributors :</td>
+                  <td>
+                    <p className={styles.textLink} onClick={() => navigate("/about-me")}>
+                      Kaung Myat Hun
+                    </p>
+                    <p>,Hein Htet</p>
+                  </td>
+                </tr>
+                <tr>
                   <td>Project Category:</td>
                   <td>Gambling</td>
                 </tr>

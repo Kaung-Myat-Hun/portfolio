@@ -6,7 +6,8 @@ function Navbar() {
   return (
     <Router>
       <div className={`${style.navbarContainer} flex justify-around items-center bg-slate-300`}>
-        <p
+        <a
+          href="/"
           className={`${style.portfolioLogo} text-black text-3xl flex justify-center items-center`}>
           <div className={`p-1 ${style.p1}`}>P</div>
           <div className={`p-1 ${style.p2}`}>o</div>
@@ -17,7 +18,7 @@ function Navbar() {
           <div className={`p-1 ${style.p7}`}>l</div>
           <div className={`p-1 ${style.p8}`}>i</div>
           <div className={`p-1 ${style.p9}`}>o</div>
-        </p>
+        </a>
         <ul className={` flex list-none justify-around items-center `}>
           <li>
             <NavLink

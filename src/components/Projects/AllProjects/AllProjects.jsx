@@ -48,7 +48,12 @@ function AllProjects() {
 
   return (
     <>
-      <h3 className={`m-20 text-3xl font-bold text-black`}>All Projects</h3>
+      <div className={`flex justify-between`}>
+        <h3 className={`m-20 text-3xl font-bold text-black`}>All Projects</h3>
+        <p className={styles.textLink} onClick={() => navigate("/about-me")}>
+          about me
+        </p>
+      </div>
       {loading ? (
         <Loading />
       ) : (
@@ -70,7 +75,7 @@ function AllProjects() {
                     style={{
                       textAlign: "center",
                       color: "black",
-                      fontSize: "1.2rem",
+                      fontSize: "1.5rem",
                       marginBottom: "30px",
                     }}>
                     {item.title}
@@ -107,6 +112,14 @@ function AllProjects() {
                   <tr>
                     <td>Project Name :</td>
                     <td>{modalData.title}</td>
+                  </tr>
+                  <tr>
+                    <td>Contributors :</td>
+                    <td>
+                      <p className={styles.textLink} onClick={() => navigate("/about-me")}>
+                        Kaung Myat Hun
+                      </p>
+                    </td>
                   </tr>
 
                   <tr>
