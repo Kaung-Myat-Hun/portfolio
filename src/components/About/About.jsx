@@ -99,19 +99,7 @@ function About() {
                         I have experience with projects such as e-commence, POS, Blog, Landing,
                         Admin Panel, Chatting App etc.
                       </p>
-                      <p>
-                        I have some experience with{" "}
-                        <a className={`font-bold text-blue-600`} href="https://nextjs.org/">
-                          Next js
-                        </a>{" "}
-                        and{" "}
-                        <a
-                          className={`font-bold text-blue-600`}
-                          href="https://www.typescriptlang.org/">
-                          Typescript
-                        </a>{" "}
-                        too.
-                      </p>
+                      <p>I have some experience with Next js and Typescript too.</p>
                       <p className={`text-end`}>Thanks Regards</p>
                     </td>
                   </tr>

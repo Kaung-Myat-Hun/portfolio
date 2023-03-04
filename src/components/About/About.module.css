@@ -175,7 +175,10 @@
 }
 .mainContainer {
   height: 87.8vh;
-  overflow: hidden;
+  overflow: auto;
+}
+.mainContainer::-webkit-scrollbar {
+  width: 5px;
 }
 .iconGithub {
   width: 30px;
