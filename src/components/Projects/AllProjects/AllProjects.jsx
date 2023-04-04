@@ -38,7 +38,7 @@ function AllProjects() {
     bgcolor: "background.paper",
     border: "2px solid #000",
     boxShadow: 24,
-    p: 2,
+    p: 1,
   };
 
   const [open, setOpen] = React.useState(false);
@@ -97,61 +97,59 @@ function AllProjects() {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description">
             <Box sx={style} className={styles.box}>
-              <div>
-                <Carousel>
-                  {modalData?.imgs?.map((item) => (
-                    <img src={item} alt="" style={{ width: "600px", height: "300px" }} />
-                  ))}
-                </Carousel>
-                <table className={styles.table}>
-                  <tr>
-                    <td colSpan="2">
-                      <p className={`text-3xl font-bold`}>Project Details</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Project Name :</td>
-                    <td>{modalData.title}</td>
-                  </tr>
-                  <tr>
-                    <td>Contributors :</td>
-                    <td>
-                      <p className={styles.textLink} onClick={() => navigate("/about-me")}>
-                        Kaung Myat Hun
-                      </p>
-                    </td>
-                  </tr>
+              <Carousel>
+                {modalData?.imgs?.map((item) => (
+                  <img src={item} alt="" style={{ width: "600px", height: "300px" }} />
+                ))}
+              </Carousel>
+              <table className={styles.table}>
+                <tr>
+                  <td colSpan="2">
+                    <p className={`text-3xl font-bold`}>Project Details</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Project Name :</td>
+                  <td>{modalData.title}</td>
+                </tr>
+                <tr>
+                  <td>Contributors :</td>
+                  <td>
+                    <p className={styles.textLink} onClick={() => navigate("/about-me")}>
+                      Kaung Myat Hun
+                    </p>
+                  </td>
+                </tr>
 
-                  <tr>
-                    <td>Project Type</td>
-                    <td>{modalData.project_type}</td>
-                  </tr>
+                <tr>
+                  <td>Project Type</td>
+                  <td>{modalData.project_type}</td>
+                </tr>
 
-                  <tr>
-                    <td>{modalData.project_type === "real world" ? "Link" : "Demo"}</td>
-                    <td>
-                      <a href={modalData.link} target="blank">
-                        {modalData.title}
+                <tr>
+                  <td>{modalData.project_type === "real world" ? "Link" : "Demo"}</td>
+                  <td>
+                    <a href={modalData.link} target="blank">
+                      {modalData.title}
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>{modalData.source_code === "" ? "" : "Source Code"}</td>
+                  <td>
+                    {modalData.source_code === "" ? (
+                      ""
+                    ) : (
+                      <a href={modalData.source_code} target="blank">
+                        Source Code
                       </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>{modalData.source_code === "" ? "" : "Source Code"}</td>
-                    <td>
-                      {modalData.source_code === "" ? (
-                        ""
-                      ) : (
-                        <a href={modalData.source_code} target="blank">
-                          Source Code
-                        </a>
-                      )}
-                    </td>
-                  </tr>
-                </table>
-                <div>
-                  <h4 className={`text-2xl text-black font-bold ml-32`}>Description</h4>
-                  <p className={`text-2xl text-black  my-8 ml-32`}>{modalData.description}</p>
-                </div>
+                    )}
+                  </td>
+                </tr>
+              </table>
+              <div>
+                <h4 className={`text-2xl text-black font-bold ml-32`}>Description</h4>
+                <p className={`text-2xl text-black  my-8 ml-32`}>{modalData.description}</p>
               </div>
             </Box>
           </Modal>

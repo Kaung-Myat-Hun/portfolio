@@ -1,9 +1,9 @@
 .table {
-  width: 60%;
+  width: 80%;
   margin: 20px 0 20px 90px;
 }
 .table tr td {
-  padding: 10px;
+  padding: 5px;
   font-size: 1.5rem;
   color: #000;
 }
@@ -30,6 +30,8 @@
 }
 .table a:hover {
   color: #007;
+}
+.box {
 }
 .textLink {
   margin: 50px 80px;
