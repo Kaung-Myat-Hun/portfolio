@@ -133,6 +133,11 @@ function ChatMessenger() {
                   enhancing transaction activities on the platform.
                 </p>
               </div>
+              <p
+                className={`text-blue-600 underline text-2xl cursor-pointer text-end p-4`}
+                onClick={() => navigate(-1)}>
+                Back
+              </p>
             </div>
           </div>
         </div>

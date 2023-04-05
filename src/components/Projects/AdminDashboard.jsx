@@ -120,6 +120,11 @@ function AdminDashboard() {
                   website owners looking for an efficient and reliable admin dashboard.
                 </p>
               </div>
+              <p
+                className={`text-blue-600 underline text-2xl cursor-pointer text-end p-4`}
+                onClick={() => navigate(-1)}>
+                Back
+              </p>
             </div>
           </div>
         </div>

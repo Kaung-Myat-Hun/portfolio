@@ -35,6 +35,7 @@ function Onbety() {
               alt=""
               className={`${styles.projectImage} max-[400px]:w-9/12 max-[400px]:h-80`}
             />
+
             <div>
               <table className={styles.table}>
                 <tr>
@@ -111,6 +112,11 @@ function Onbety() {
                   other features, makes it a popular choice among online gambling enthusiasts.
                 </p>
               </div>
+              <p
+                className={`text-blue-600 underline text-2xl cursor-pointer text-end p-4`}
+                onClick={() => navigate(-1)}>
+                Back
+              </p>
             </div>
           </div>
         </div>
