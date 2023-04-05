@@ -23,7 +23,7 @@ function Navbar() {
           <li>
             <NavLink
               className={`p-5 ${style.navLink} text-slate-500`}
-              onClick={() => window.location.assign("/")}
+              // onClick={() => window.location.assign("/")}
               to="/">
               Home
             </NavLink>
@@ -31,7 +31,7 @@ function Navbar() {
           <li>
             <NavLink
               className={`p-5 ${style.navLink} text-slate-500`}
-              onClick={() => window.location.assign("/projects")}
+              // onClick={() => window.location.assign("/projects")}
               to="/projects">
               Projects
             </NavLink>
@@ -39,7 +39,7 @@ function Navbar() {
           <li>
             <NavLink
               className={`p-5 ${style.navLink} text-slate-500`}
-              onClick={() => window.location.assign("/contact")}
+              // onClick={() => window.location.assign("/contact")}
               to="/contact">
               Contact
             </NavLink>
