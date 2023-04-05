@@ -148,8 +148,7 @@ function AllProjects() {
                 </tr>
               </table>
               <div>
-                <h4 className={`text-2xl text-black font-bold ml-32`}>Description</h4>
-                <p className={`text-2xl text-black  my-8 ml-32`}>{modalData.description}</p>
+                <ChildModal modalData={modalData}></ChildModal>
               </div>
             </Box>
           </Modal>
@@ -160,3 +159,44 @@ function AllProjects() {
 }
 
 export default AllProjects;
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 600,
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  pt: 2,
+  px: 4,
+  pb: 3,
+};
+
+function ChildModal(props) {
+  const [openC, setOpenC] = useState(false);
+  const handleOpenC = () => {
+    setOpenC(true);
+  };
+  const handleCloseC = () => {
+    setOpenC(false);
+  };
+  return (
+    <>
+      <Button onClick={handleOpenC}>Description</Button>
+      <Modal
+        open={openC}
+        onClose={handleCloseC}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description">
+        <Box sx={style} className={styles.box}>
+          <div>
+            <h4 className={`text-2xl text-black font-bold `}>Description</h4>
+            <p className={`text-2xl text-black  `}>{props.modalData.description}</p>
+          </div>
+        </Box>
+      </Modal>{" "}
+    </>
+  );
+}

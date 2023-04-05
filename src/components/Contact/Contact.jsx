@@ -3,8 +3,19 @@ import styles from "./Contact.module.css";
 import axios from "axios";
 import Loading from "../CustomLoading/CustomLoading";
 import { useNavigate } from "react-router-dom";
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 function Contact() {
+  const firebaseConfig = {
+    apiKey: "AIzaSyD-wXS2MzM1wVkq3xA2n6svILrI9plNM-A",
+    authDomain: "chat-connect-bw.firebaseapp.com",
+    projectId: "chat-connect-bw",
+    storageBucket: "chat-connect-bw.appspot.com",
+    messagingSenderId: "947335515058",
+    appId: "1:947335515058:web:126b34c4eef1d1dd19f2ab",
+    measurementId: "G-YQ971ZTZ0R",
+  };
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -142,4 +153,6 @@ function Contact() {
   );
 }
 
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 export default Contact;
