@@ -31,7 +31,7 @@ function Navbar() {
           <li>
             <NavLink
               className={`p-5 ${style.navLink} text-slate-500`}
-              onClick={() => window.location.assign("/project")}
+              onClick={() => window.location.assign("/projects")}
               to="/projects">
               Projects
             </NavLink>
