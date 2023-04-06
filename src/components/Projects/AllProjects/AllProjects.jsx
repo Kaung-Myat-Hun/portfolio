@@ -154,6 +154,11 @@ function AllProjects() {
           </Modal>
         </div>
       )}
+      <p
+        onClick={() => navigate(-1)}
+        className={`text-blue-600 underline text-2xl text-center cursor-pointer p-5`}>
+        Back
+      </p>
     </>
   );
 }
