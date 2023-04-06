@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+
 .active {
   color: #007bff;
   text-decoration: underline;
+}
+
+html {
+  font-family: "Alkatra", cursive;
 }

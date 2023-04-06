@@ -237,7 +237,7 @@ function About() {
                 <div
                   className={`flex justify-between max-[400px]:flex-col max-[400px]:items-center`}>
                   <p
-                    onClick={() => navigate("/")}
+                    onClick={() => navigate(-1)}
                     className={`text-black py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
                     <svg
                       width="20"

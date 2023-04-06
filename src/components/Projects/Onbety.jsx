@@ -90,17 +90,18 @@ function Onbety() {
                   <strong>Onbety</strong> is a web-based gambling platform that was developed using
                   several frontend technologies, including React JS, Redux Tool kit, and Material
                   UI. The platform falls under the category of online gambling, and it is likely
-                  similar to other gambling platforms such as 1xbet. <br /> The development of{" "}
-                  <strong>Onbety</strong> lasted for a year, during which the development team
-                  integrated several features to enhance the user experience. These features include
-                  a role-based access control system that allows users to access the platform
-                  according to their assigned roles. The roles available on the platform are admin,
-                  hr, account, transaction, and user. <br /> Another critical feature of{" "}
-                  <strong>Onbety</strong> is the ability to facilitate cryptocurrency transactions.
-                  This feature enables users to deposit and withdraw funds using cryptocurrencies
-                  such as Bitcoin and Ethereum. Additionally, <strong>Onbety</strong> allows users
-                  to make local bank transactions, making it easier for users who prefer using their
-                  local banks to transact. <br />
+                  similar to other gambling platforms such as 1xbet. <br />
+                  <br /> The development of <strong>Onbety</strong> lasted for a year, during which
+                  the development team integrated several features to enhance the user experience.
+                  These features include a role-based access control system that allows users to
+                  access the platform according to their assigned roles. The roles available on the
+                  platform are admin, hr, account, transaction, and user. <br />
+                  <br /> Another critical feature of <strong>Onbety</strong> is the ability to
+                  facilitate cryptocurrency transactions. This feature enables users to deposit and
+                  withdraw funds using cryptocurrencies such as Bitcoin and Ethereum. Additionally,{" "}
+                  <strong>Onbety</strong> allows users to make local bank transactions, making it
+                  easier for users who prefer using their local banks to transact. <br />
+                  <br />
                   <strong>Onbety</strong> also supports international bank transactions,
                   particularly from banks in Thailand and Singapore. This feature allows users to
                   transact from different regions and using different currencies. The integration of
