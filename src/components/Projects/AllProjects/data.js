@@ -96,4 +96,21 @@ export const Data = [
     link: "https://e-commerce-dynasity.netlify.app",
     source_code: "",
   },
+  {
+    id: 8,
+    title: "AKH Game Shop",
+    project_type: "real world sample",
+    img: "/project photo/akh/s1.png",
+    imgs: [
+      "/project photo/akh/s1.png",
+      "/project photo/akh/s2.png",
+      "/project photo/akh/s3.png",
+      "/project photo/akh/s4.png",
+      "/project photo/akh/s5.png",
+    ],
+    description:
+      "AKH Game Shop is a frontend e-commerce website developed using Next JS + Typescript and tailwind CSS. The website is designed for gamers to purchase their favorite games online. The development of AKH Game Shop took three months, during which the development team integrated several core features of the website.\n   One of the core features of AKH Game Shop is the Order System. The Order System enables customers to select the games they wish to purchase and add them to their virtual cart for checkout. Once customers have completed their purchase, they will receive an alert message confirming their order. The Order System also keeps a record of customer orders and updates inventory levels in real-time.\n    Another core feature of AKH Game Shop is the payment method integration. The website integrates several payment methods, such as credit cards, PayPal, and bank transfers. This allows customers to choose a payment method that is convenient for them and complete their purchase with ease.\n    In addition to the Order System and payment method integration, AKH Game Shop also has a blog section. The blog section is designed to provide customers with the latest news and updates about the gaming industry. Customers can also learn about upcoming game releases and events through the blog section.\n    Finally, AKH Game Shop features an alert message system that keeps customers informed about new game releases, discounts, and promotions. This ensures that customers are always up-to-date with the latest news and offers from the website.\n    In conclusion, AKH Game Shop is a frontend e-commerce website designed for gamers to purchase their favorite games online. Its integration of advanced frontend technologies such as Next JS + Typescript and tailwind CSS, core features such as the Order System and payment method integration, and appealing design make it a popular choice among gamers looking for a modern e-commerce website.",
+    link: "https://akh.vercel.app/",
+    source_code: "",
+  },
 ];
