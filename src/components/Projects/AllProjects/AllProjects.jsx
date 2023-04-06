@@ -57,7 +57,14 @@ function AllProjects() {
       {loading ? (
         <Loading />
       ) : (
-        <div className={styles.mainContainer} style={{ display: "flex", flexWrap: "wrap" }}>
+        <div
+          className={`${styles.mainContainer}`}
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+          }}>
           {Data.map((item) => (
             <div className={styles.chatMain} key={item.id}>
               <div className={`flex`}>
@@ -170,7 +177,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 600,
+  width: 620,
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -197,8 +204,10 @@ function ChildModal(props) {
         aria-describedby="modal-modal-description">
         <Box sx={style} className={styles.box}>
           <div>
-            <h4 className={`text-2xl text-black font-bold `}>Description</h4>
-            <p className={`text-2xl text-black  `}>{props.modalData.description}</p>
+            <h4 className={`text-2xl text-black max-[400px]:text-sm font-bold `}>Description</h4>
+            <p className={`text-2xl text-black max-[400px]:text-sm `}>
+              {props.modalData.description}
+            </p>
           </div>
         </Box>
       </Modal>{" "}

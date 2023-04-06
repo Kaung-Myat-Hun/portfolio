@@ -44,6 +44,9 @@
   cursor: pointer;
 }
 @media screen and (max-width: 400px) {
+  .mainContainer {
+    margin-left: 8%;
+  }
   .chatMain {
     height: auto !important;
   }
@@ -54,5 +57,12 @@
   .box .table {
     width: 100%;
     margin: 0;
+  }
+  .textLink {
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .table {
+    width: 100%;
   }
 }

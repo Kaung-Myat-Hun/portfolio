@@ -91,6 +91,13 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .heroText {
+    font-size: 4rem !important;
+  }
+  .subtitle {
+    font-size: 2rem !important;
+  }
+
   .profileImage {
     width: 300px;
     height: 300px;
@@ -111,30 +118,29 @@
   }
   .mainContainer {
     width: 100vw;
+    text-align: center;
     height: auto;
     overflow: auto;
     margin: 0 !important;
   }
   .name {
-    font-size: 60px;
+    font-size: 4rem;
   }
-  .heroText {
-    font-size: 60px;
-  }
-  .subtitle {
-    font-size: 30px;
-  }
+
   .infoText {
     width: 100vw;
     margin: 0 !important;
     padding: 0 !important;
   }
   .moreAboutBtn {
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    margin-top: 15vh;
+    margin-left: 0 !important;
   }
   .iconGithub {
     width: 30px;
     height: 30px;
+    margin: 30px;
   }
   .iconContainer {
     margin-left: 0;

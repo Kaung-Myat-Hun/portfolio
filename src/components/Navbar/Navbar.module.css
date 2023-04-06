@@ -17,6 +17,13 @@
   color: #007;
   text-decoration: underline;
 }
+.navGroupM {
+  height: 50vh;
+}
+.navLinkM {
+  margin: 30px !important;
+  font-size: 1.6rem;
+}
 
 /* .portfolioLogo:hover .p1 {
   color: #007bff;

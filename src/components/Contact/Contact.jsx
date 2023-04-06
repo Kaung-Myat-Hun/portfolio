@@ -40,7 +40,9 @@ function Contact() {
       ) : (
         <div className={`${styles.main} flex max-[400px]:flex-col justify-around`}>
           <div className={`w-6/12 max-[400px]:w-full`}>
-            <form action="" className={`flex flex-col justify-center items-center mt-32 w-11/12`}>
+            <form
+              action=""
+              className={`flex flex-col justify-center items-center max-[400px]:mt-20 max-[400px]:w-full mt-32 w-11/12`}>
               <input
                 placeholder=" Name"
                 className={`text-2xl m-2 p-3 bg-slate-100 w-8/12`}
@@ -78,7 +80,7 @@ function Contact() {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div>
-              <table className={`text-xl text-black mt-10`}>
+              <table className={`text-xl text-black mt-10 max-[400px]:w-11/12 max-[400px]:m-10`}>
                 <tr>
                   <td>Phone</td>
                   <td>

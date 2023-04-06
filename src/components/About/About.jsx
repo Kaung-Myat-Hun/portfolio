@@ -52,10 +52,10 @@ function About() {
                   </tr>
                   <tr>
                     <td>Experience : </td>
-                    <td> 1 years Experience With React JS </td>
+                    <td> Above 1 years Experience With React JS </td>
                   </tr>
                   <tr>
-                    <td>Education</td>
+                    <td>Education : </td>
                     <td>
                       <p>Zoology Final Year</p>
                     </td>
@@ -88,8 +88,8 @@ function About() {
                         Hello! I am <span className={`font-bold`}>Kaung Myat Hun</span>.
                       </p>
                       <p>
-                        I am Junior Frontend Web Developer with 6 Months Experience Working with
-                        React JS .
+                        I am Junior Frontend Web Developer with above 1 years Experience Working
+                        with React JS .
                       </p>
                       <p>
                         I am interesting to challenge to get new experience with Frontend developer.
@@ -238,10 +238,11 @@ function About() {
                   className={`flex justify-between max-[400px]:flex-col max-[400px]:items-center`}>
                   <p
                     onClick={() => navigate(-1)}
-                    className={`text-black py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
+                    className={`text-black py-20 px-40 max-[400px]:py-10 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
                     <svg
                       width="20"
                       height="12"
+                      style={{ marginTop: "4px" }}
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512">
                       <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
@@ -250,7 +251,7 @@ function About() {
                   </p>
                   <p
                     onClick={() => navigate("/projects")}
-                    className={`text-black py-20 px-40 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
+                    className={`text-black py-20 px-40  max-[400px]:py-10 flex items-center hover:fill-blue-600 hover:text-blue-600 hover:cursor-pointer select-none underline text-2xl`}>
                     projects{" "}
                     <svg
                       width="20"
