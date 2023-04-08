@@ -49,7 +49,7 @@ function Navbar() {
           </li>
         </ul>
         <button
-          className="bg-slate-600 text-white rounded px-4 py-3"
+          className="bg-slate-600 min-[400px]:hidden text-white rounded px-4 py-3"
           onClick={() => setIsOpen(true)}>
           <svg
             width="14px"
