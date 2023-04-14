@@ -1,21 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./Contact.module.css";
 import axios from "axios";
 import Loading from "../CustomLoading/CustomLoading";
 import { useNavigate } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const firebaseConfig = {
-    apiKey: "AIzaSyD-wXS2MzM1wVkq3xA2n6svILrI9plNM-A",
-    authDomain: "chat-connect-bw.firebaseapp.com",
-    projectId: "chat-connect-bw",
-    storageBucket: "chat-connect-bw.appspot.com",
-    messagingSenderId: "947335515058",
-    appId: "1:947335515058:web:126b34c4eef1d1dd19f2ab",
-    measurementId: "G-YQ971ZTZ0R",
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+    emailjs.sendForm("service_dp091n8", "template_grmwjkp", form.current, "yPwzuRphfUlZVl_IX").then(
+      (result) => {
+        // show the user a success message
+        alert("email sent");
+        window.location.reload(true);
+      },
+      (error) => {
+        // show the user an error
+        alert(error);
+      }
+    );
   };
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -41,26 +50,31 @@ function Contact() {
         <div className={`${styles.main} flex max-[400px]:flex-col justify-around`}>
           <div className={`w-6/12 max-[400px]:w-full`}>
             <form
+              ref={form}
+              onSubmit={sendEmail}
               action=""
               className={`flex flex-col justify-center items-center max-[400px]:mt-20 max-[400px]:w-full mt-32 w-11/12`}>
               <input
                 placeholder=" Name"
                 className={`text-2xl m-2 p-3 bg-slate-100 w-8/12`}
                 type="text"
+                name="user_name"
               />
               <input
                 placeholder=" Mail"
                 className={`text-2xl m-2 p-3 bg-slate-100 w-8/12`}
-                type="text"
+                type="email"
+                name="user_email"
               />
               <input
                 placeholder=" Phone"
                 className={`text-2xl m-2 p-3 bg-slate-100 w-8/12`}
                 type="text"
+                name="user_phone"
               />
               <textarea
                 className={`text-2xl w-8/12 bg-slate-100 m-2 p-3`}
-                name=""
+                name="message"
                 id=""
                 cols="10"
                 rows="10"
