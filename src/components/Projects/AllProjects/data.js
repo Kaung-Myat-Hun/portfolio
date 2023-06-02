@@ -79,23 +79,23 @@ export const Data = [
     link: "https://admin-ecommerce.netlify.app/",
     source_code: "",
   },
-  {
-    id: 7,
-    title: "E-Commerce",
-    project_type: "real world sample",
-    img: "/project photo/e-commerce/main.png",
-    imgs: [
-      "/project photo/e-commerce/main.png",
-      "/project photo/e-commerce/Screenshot_20230225_122539.png",
-      "/project photo/e-commerce/Screenshot_20230225_122604.png",
-      "/project photo/e-commerce/Screenshot_20230225_122641.png",
-      "/project photo/e-commerce/Screenshot_20230225_122700.png",
-    ],
-    description:
-      "Kacy Beauty is a frontend e-commerce website developed using advanced frontend technologies such as React JS, Redux Tool kit, Material UI, and tailwind CSS (plugin daisy UI). The website is developed to offer a user-friendly and responsive experience to customers looking to buy beauty products online.\n  The development of Kacy Beauty took three months, during which the development team integrated several core features of the website. One of these features is the 'Add to Cart' feature, which is implemented using Redux Tool kit. This feature allows customers to select beauty products from the website and add them to their virtual cart for future checkout.\n Another core feature of Kacy Beauty is the 'Add to Waitlist' feature, which is also implemented using Redux Tool kit. This feature enables customers to add products that are out of stock to their waitlist. The waitlist feature ensures that customers get notified via email when the product is back in stock.\n The website's use of advanced frontend technologies such as React JS and Redux Tool kit ensures that it is fast, responsive, and scalable. The Material UI and tailwind CSS (plugin daisy UI) are used for the website's design, making it visually appealing to customers.\n In conclusion, Kacy Beauty is a frontend e-commerce website that provides a user-friendly and responsive experience to customers looking to buy beauty products online. Its integration of advanced frontend technologies, core features such as 'Add to Cart' and 'Add to Waitlist,' and appealing design make it a popular choice among customers looking for a modern e-commerce website.",
-    link: "https://e-commerce-dynasity.netlify.app",
-    source_code: "",
-  },
+  // {
+  //   id: 7,
+  //   title: "E-Commerce",
+  //   project_type: "real world sample",
+  //   img: "/project photo/e-commerce/main.png",
+  //   imgs: [
+  //     "/project photo/e-commerce/main.png",
+  //     "/project photo/e-commerce/Screenshot_20230225_122539.png",
+  //     "/project photo/e-commerce/Screenshot_20230225_122604.png",
+  //     "/project photo/e-commerce/Screenshot_20230225_122641.png",
+  //     "/project photo/e-commerce/Screenshot_20230225_122700.png",
+  //   ],
+  //   description:
+  //     "Kacy Beauty is a frontend e-commerce website developed using advanced frontend technologies such as React JS, Redux Tool kit, Material UI, and tailwind CSS (plugin daisy UI). The website is developed to offer a user-friendly and responsive experience to customers looking to buy beauty products online.\n  The development of Kacy Beauty took three months, during which the development team integrated several core features of the website. One of these features is the 'Add to Cart' feature, which is implemented using Redux Tool kit. This feature allows customers to select beauty products from the website and add them to their virtual cart for future checkout.\n Another core feature of Kacy Beauty is the 'Add to Waitlist' feature, which is also implemented using Redux Tool kit. This feature enables customers to add products that are out of stock to their waitlist. The waitlist feature ensures that customers get notified via email when the product is back in stock.\n The website's use of advanced frontend technologies such as React JS and Redux Tool kit ensures that it is fast, responsive, and scalable. The Material UI and tailwind CSS (plugin daisy UI) are used for the website's design, making it visually appealing to customers.\n In conclusion, Kacy Beauty is a frontend e-commerce website that provides a user-friendly and responsive experience to customers looking to buy beauty products online. Its integration of advanced frontend technologies, core features such as 'Add to Cart' and 'Add to Waitlist,' and appealing design make it a popular choice among customers looking for a modern e-commerce website.",
+  //   link: "https://e-commerce-dynasity.netlify.app",
+  //   source_code: "",
+  // },
   {
     id: 8,
     title: "AKH Game Shop",
