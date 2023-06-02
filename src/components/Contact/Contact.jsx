@@ -12,17 +12,24 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
-    emailjs.sendForm("service_dp091n8", "template_grmwjkp", form.current, "yPwzuRphfUlZVl_IX").then(
-      (result) => {
-        // show the user a success message
-        alert("email sent");
-        window.location.reload(true);
-      },
-      (error) => {
-        // show the user an error
-        alert(error);
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_dp091n8",
+        "template_grmwjkp",
+        form.current,
+        "yPwzuRphfUlZVl_IX"
+      )
+      .then(
+        (result) => {
+          // show the user a success message
+          alert("email sent");
+          window.location.reload(true);
+        },
+        (error) => {
+          // show the user an error
+          alert(error);
+        }
+      );
   };
 
   const [loading, setLoading] = useState(false);
@@ -47,13 +54,16 @@ function Contact() {
       {loading ? (
         <Loading />
       ) : (
-        <div className={`${styles.main} flex max-[400px]:flex-col justify-around`}>
-          <div className={`w-6/12 max-[400px]:w-full`}>
+        <div
+          className={`${styles.main} flex max-[400px]:flex-col max-[820px]:flex-col justify-around`}
+        >
+          <div className={`w-6/12 max-[400px]:w-full max-[820px]:w-full`}>
             <form
               ref={form}
               onSubmit={sendEmail}
               action=""
-              className={`flex flex-col justify-center items-center max-[400px]:mt-20 max-[400px]:w-full mt-32 w-11/12`}>
+              className={`flex flex-col justify-center items-center max-[400px]:mt-20 max-[400px]:w-full max-[820px]:w-full max-[820px]:mt-20px mt-32 w-11/12`}
+            >
               <input
                 placeholder=" Name"
                 className={`text-2xl m-2 p-3 bg-slate-100 w-8/12`}
@@ -78,13 +88,18 @@ function Contact() {
                 id=""
                 cols="10"
                 rows="10"
-                placeholder="Discuss Our Project"></textarea>
-              <button className={`btn w-5/12 text-white text-xl border-none bg-slate-600 mt-10`}>
+                placeholder="Discuss Our Project"
+              ></textarea>
+              <button
+                className={`btn w-5/12 text-white text-xl border-none bg-slate-600 mt-10`}
+              >
                 Send
               </button>
             </form>
           </div>
-          <div className={`w-6/12 max-[400px]:mx-auto max-[400px]:w-full  my-10`}>
+          <div
+            className={`w-6/12 max-[400px]:mx-auto max-[400px]:w-full max-[820px]:mx-auto max-[820px]:w-full  my-10`}
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1152.501713243559!2d96.18037019657116!3d16.799416790365235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smm!4v1676821725103!5m2!1sen!2smm"
               className={styles.frame}
@@ -92,47 +107,62 @@ function Contact() {
               height="500"
               style={{ border: 0 }}
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
             <div>
-              <table className={`text-xl text-black mt-10 max-[400px]:w-11/12 max-[400px]:m-10`}>
+              <table
+                className={`text-xl text-black mt-10 max-[400px]:w-11/12 max-[400px]:m-10 max-[820px]:w-11/12 max-[820px]:m-10`}
+              >
                 <tr>
                   <td>Phone</td>
                   <td>
                     :{" "}
-                    <a className={`hover:text-blue-600`} href="viber://chat?number=+959752815691">
+                    <a
+                      className={`hover:text-blue-600`}
+                      href="viber://chat?number=+959752815691"
+                    >
                       +959 752 815 691
                     </a>
                   </td>
                 </tr>
                 <tr>
                   <td>Address</td>
-                  <td>: No.(90), AungMingalar Street, KyaukMyaung Qrt, Yangon</td>
+                  <td>
+                    : No.(90), AungMingalar Street, KyaukMyaung Qrt, Yangon
+                  </td>
                 </tr>
                 <tr>
                   <td colSpan="2" style={{ display: "flex" }}>
                     <a
                       href="https://www.facebook.com/profile.php?id=100024004446712"
                       target="blank"
-                      className={` hover:fill-blue-600 text-2xl m-3`}>
+                      className={` hover:fill-blue-600 text-2xl m-3`}
+                    >
                       <svg
                         width="20px"
                         height="20px"
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512">
+                        viewBox="0 0 512 512"
+                      >
                         <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
                       </svg>
                     </a>
-                    <a href="/about-me" className={` hover:fill-blue-600 text-2xl m-3`}>
+                    <a
+                      href="/about-me"
+                      className={` hover:fill-blue-600 text-2xl m-3`}
+                    >
                       <svg
                         width="20px"
                         height="20px"
                         viewBox="0 0 70 70"
-                        enable-background="new 0 0 70 70">
+                        enable-background="new 0 0 70 70"
+                      >
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g
                           id="SVGRepo_tracerCarrier"
                           stroke-linecap="round"
-                          stroke-linejoin="round"></g>
+                          stroke-linejoin="round"
+                        ></g>
                         <g id="SVGRepo_iconCarrier">
                           {" "}
                           <g>

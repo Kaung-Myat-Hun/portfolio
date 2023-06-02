@@ -251,3 +251,58 @@
     margin-top: -150px !important;
   }
 }
+@media screen and (max-width: 820px) {
+  .profileImage {
+    width: 380px;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+  }
+  .mainSquare {
+    width: 330px;
+    height: 330px;
+    left: 40px;
+  }
+  .profileImageContainer {
+    width: 80vw;
+    top: 80px;
+    left: 200px;
+    margin: 0px 0px -140px 0px !important;
+    padding: 0 !important;
+  }
+  .mainContainer {
+    width: 100vw;
+    height: auto;
+    overflow: auto;
+    margin: 0 !important;
+  }
+  .name {
+    font-size: 60px;
+  }
+  .heroText {
+    font-size: 60px;
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .infoText {
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .moreAboutBtn {
+    margin-left: 100px;
+  }
+  .iconGithub {
+    width: 30px;
+    height: 30px;
+  }
+  .iconContainer {
+    margin-left: 0;
+  }
+  .table {
+    width: 90vw;
+    margin: 10px;
+    margin-top: -150px !important;
+  }
+}

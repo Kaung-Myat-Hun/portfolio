@@ -8,12 +8,14 @@ function Home() {
   const navigate = useNavigate();
   return (
     <div className={style.mainContainer}>
-      <div className={`flex max-[400px]:flex-col`}>
+      <div
+        className={`flex max-[400px]:flex-col max-[820px]:flex-col max-[820px]:text-center max[820px]:justify-center max[820px]:items-center`}
+      >
         <div>
           <div className={style.profileImageContainer}>
             <div className={style.mainSquare}></div>
-            <div className={`${style.square} ${style.SOne}`}></div>
-            <div className={`${style.square} ${style.STwo}`}></div>
+            {/* <div className={`${style.square} ${style.SOne}`}></div>
+            <div className={`${style.square} ${style.STwo}`}></div> */}
             <img src={image} alt="" className={style.profileImage} />
             <button
               onClick={() => navigate("/about-me")}
