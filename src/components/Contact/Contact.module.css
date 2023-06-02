@@ -21,3 +21,9 @@
     margin: auto;
   }
 }
+@media screen and (min-width: 1700px){
+  .main{
+    height: 81.7vh;
+    margin: 80px 160px 0px;
+  }
+}

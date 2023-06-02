@@ -174,3 +174,9 @@
     margin-top: -100px;
   }
 }
+@media screen and (min-width: 1700px){
+  .mainContainer{
+    height: 90.2vh;
+    margin: auto 140px;
+  }
+}
