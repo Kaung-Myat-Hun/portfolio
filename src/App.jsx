@@ -7,9 +7,10 @@ import Mobile from "./components/Mobile/Mobile";
 import { useState, useEffect } from "react";
 
 function App() {
+  const [mobileDev, setMobileDev] = useState(false)
   const [os, setOs] = useState({});
   useEffect(() => {
-    var module = {
+    let module = {
       options: [],
       header: [
         navigator.platform,
@@ -41,14 +42,14 @@ function App() {
         { name: "Mozilla", value: "Mozilla", version: "Mozilla" },
       ],
       init: function () {
-        var agent = this.header.join(" "),
+        let agent = this.header.join(" "),
           os = this.matchItem(agent, this.dataos),
           browser = this.matchItem(agent, this.databrowser);
 
         return { os: os, browser: browser };
       },
       matchItem: function (string, data) {
-        var i = 0,
+        let i = 0,
           j = 0,
           html = "",
           regex,
@@ -91,13 +92,23 @@ function App() {
       },
     };
 
-    var e = module.init(),
+    let e = module.init(),
       debug = "";
 
     debug += e.os.name;
 
     setOs({ name: debug });
+    getWidth();
   }, []);
+
+  const getWidth = () =>{
+    let widthDevice = window.innerWidth;
+    if (widthDevice < 420) {
+      setMobileDev(true)
+    }else{
+      setMobileDev(false)
+    }
+  }
   console.log(os?.name, "os");
   return (
     <>
@@ -105,7 +116,7 @@ function App() {
         <Mobile name={os} />
       ) : os?.name === "iPhone" ? (
         <Mobile name={os} />
-      ) : (
+      ) : mobileDev ? <Mobile name={os} /> : (
         <div className="App bg-slate-200">
           <Navbar></Navbar>
           <BrowserRouter>
