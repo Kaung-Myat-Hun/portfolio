@@ -116,7 +116,7 @@ function App() {
         <Mobile name={os} />
       ) : os?.name === "iPhone" ? (
         <Mobile name={os} />
-      ) : mobileDev ? <Mobile name={os} /> : (
+      ) : mobileDev ? <Mobile name={os} width={window.innerWidth} /> : (
         <div className="App bg-slate-200">
           <Navbar></Navbar>
           <BrowserRouter>
