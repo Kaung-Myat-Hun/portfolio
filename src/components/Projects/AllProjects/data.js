@@ -50,21 +50,6 @@ export const Data = [
     source_code: "",
   },
   {
-    id: 5,
-    title: "Onbety",
-    project_type: "Real World",
-    img: "/project photo/onbety.png",
-    imgs: [
-      "/project photo/onbety.png",
-      "/project photo/onbety/Screenshot_20230224_071446.png",
-      "/project photo/onbety/Screenshot_20230224_071537.png",
-    ],
-    description:
-      "Onbety is a web-based gambling platform that was developed using several frontend technologies, including React JS, Redux Tool kit, and Material UI. The platform falls under the category of online gambling, and it is likely similar to other gambling platforms such as 1xbet. \n The development of Onbety lasted for a year, during which the development team integrated several features to enhance the user experience. These features include a role-based access control system that allows users to access the platform according to their assigned roles. The roles available on the platform are admin, hr, account, transaction, and user. \n Another critical feature of Onbety is the ability to facilitate cryptocurrency transactions. This feature enables users to deposit and withdraw funds using cryptocurrencies such as Bitcoin and Ethereum. Additionally, Onbety allows users to make local bank transactions, making it easier for users who prefer using their      local banks to transact. \n Onbety also supports international bank transactions, particularly from banks in Thailand and Singapore. This feature allows users to transact from different regions and using different currencies. The integration of this feature is an excellent way of ensuring the platform is accessible to a global audience. In conclusion, Onbety is a gambling platform built using modern frontend technologies, and it contains several features designed to enhance the user experience. Its integration of cryptocurrency transactions, local bank transactions, and international bank transactions, among other features, makes it a popular choice among online gambling enthusiasts.",
-    link: "https://onbety.com",
-    source_code: "",
-  },
-  {
     id: 6,
     title: "admin dashboard e-commerce",
     project_type: "real world sample",
