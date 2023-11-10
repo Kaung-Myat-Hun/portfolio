@@ -62,7 +62,7 @@ function Home() {
             <a
               className={` max-[400px]:mb-20 hover:fill-blue-600 justify-end`}
               target="blank"
-              href="https://github.com/KaungMyatHun-15691"
+              href="https://github.com/Kaung-Myat-Hun"
             >
               <svg
                 className={style.iconGithub}
