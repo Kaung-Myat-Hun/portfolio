@@ -68,21 +68,6 @@ function Project() {
                   Admin Dashboard
                 </p>
               </div>
-              <div
-                className={`w-4/12 mx-20 max-[400px]:mx-0 max-[400px]:w-7/12 max-[820px]:w-7/12 hover:text-blue-600 text-black`}
-                onClick={() => navigate("/project/onbety")}
-              >
-                <img
-                  src={img3}
-                  alt=""
-                  className={`hover:scale-110 transition-all hover:cursor-pointer `}
-                />
-                <p
-                  className={`text-2xl  text-center mt-20 max-[400px]:my-10 max-[820px]:my-10 hover:cursor-pointer`}
-                >
-                  Onbety
-                </p>
-              </div>
             </div>
           </div>
           <div
